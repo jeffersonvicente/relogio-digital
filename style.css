@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+}
+
+.relogio {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.hora {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.data {
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* BOTÃO TEMA */
+.toggle-tema {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: inherit;
+}
+
+/* TEMA CLARO */
+body.light {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #000;
+}
+
+body.light .relogio {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+body.light .toggle-tema {
+    color: #000;
+}
